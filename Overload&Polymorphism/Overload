@@ -1,0 +1,25 @@
+from Person import Person
+
+# Let's see the basics of overloading too.
+
+# Python itself performs operator overloading
+
+# With addition we can get different results:
+print(2+3)
+print("2"+"3")
+print([2,]+[3,])
+
+# There's a dunder method called __add__ that we can override
+# But we want to overload not override this method
+
+p1 = Person('John',24)
+p2 = Person('Lucy',31)
+
+print(p1)
+print(p2)
+
+# p1 + p2 = p1.__add__(p2)
+# p1 - p2 = p1.__sub__(p2)
+
+print(p1+p2)
+print(p1-p2)
